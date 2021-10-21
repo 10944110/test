@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小考</title>
+  <style>
+    @import url(test.css);
+  </style>
+</head>
+
+<body>
+  <table border="1">
+    <tr>
+      <td colspan="4" class="h1">
+        個人資料
+      </td>
+    </tr>
+    <tr>
+      <td class="d">姓名</td>
+      <td><input type="text" name="user_name" /></td><br>
+      <td class="d">性別</td>
+      <td class="d"><input type="radio" name="gender" value="男" />男生
+        <input type="radio" name="gender" value="女" />女生
+      </td>
+    </tr>
+    <tr>
+      <td class="d">生日</td>
+      <td colspan="3"><input type="date" name="selectdate" /></td>
+    </tr>
+    <tr>
+      <td class="d">手機(10碼)</td>
+      <td><input type="text" name="a" /></td>
+      <td class="d">市內電話</td>
+      <td><input type="text" name="b" /></td>
+    </tr>
+    <tr>
+      <td class="d">e-mail</td>
+      <td colspan="3"><input type="text" name="c" /></td>
+    </tr>
+    <tr>
+      <td class="d">地址</td>
+      <td><select size="1" name="縣市">
+          <option>臺北市</option>
+          <option>臺中市</option>
+          <option>高雄市</option>
+        </select>
+        <input type="text" name="c" size="40" />
+      </td>
+    </tr>
+    <tr>
+      <td class="d">備註</td>
+      <td colspan="3"><textarea name="memo" cols="50" rows="5" wrap="hard"> </textarea>
+      </td>
+    </tr>
+  </table>
+  <form method="post" action="mailto:awss12awss12@gmail.com" enctype="text/plain">
+    <input type="submit" value="送出" class="e" />
+    <input type="reset" value="重設" class="e" />
+  </form>
+</body>
+
+</html>
